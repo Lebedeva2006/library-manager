@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="599.0" prefWidth="901.0" spacing="20.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.lebedeva.librarylabgui.HelloController">
+
+    <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+    </padding>
+
+    <children>
+        <HBox prefHeight="550.0" prefWidth="850.0" spacing="25">
+            <children>
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" spacing="15">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#ShowListOfBooks" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-font-weight: bold; -fx-background-color: #8b008b; -fx-text-fill: #ffff00; -fx-font-size: 14; -fx-border-color: #ffff00; -fx-border-width: 1; -fx-border-radius: 20;" text="Show books" />
+                        <Button mnemonicParsing="false" onAction="#onNewClick" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-font-weight: bold; -fx-background-color: #8b008b; -fx-text-fill: #ffff00; -fx-font-size: 14; -fx-border-color: #ffff00; -fx-border-width: 1; -fx-border-radius: 20;" text="Add book" />
+                        <Button mnemonicParsing="false" onAction="#onEditClick" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-font-weight: bold; -fx-background-color: #8b008b; -fx-text-fill: #ffff00; -fx-font-size: 14; -fx-border-color: #ffff00; -fx-border-width: 1; -fx-border-radius: 20;" text="Edit book" />
+                        <Button mnemonicParsing="false" onAction="#onSearchByKeywordClick" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-font-weight: bold; -fx-background-color: #8b008b; -fx-text-fill: #ffff00; -fx-font-size: 14; -fx-border-color: #ffff00; -fx-border-width: 1; -fx-border-radius: 20;" text="Find book" />
+                    </children>
+                    <padding>
+                        <Insets right="15.0" />
+                    </padding>
+                </VBox>
+                <TextArea fx:id="welcomeText" prefHeight="200.0" prefWidth="500.0"
+                          style="
+                            -fx-background-radius: 15;
+                            -fx-border-radius: 15;
+                            -fx-font-size: 13px;
+                            -fx-border-color: #ffff00;
+                            -fx-padding: 8;
+                            -fx-border-width: 2;
+                            -fx-background-color: #000000;
+                            -fx-control-inner-background: #000000;
+                            -fx-text-fill: #ffff00;
+                            -fx-font-weight: bold;
+                            -fx-color: #ffff00;
+                            -fx-scroll-bar-color: #ffff00;
+                            -fx-scroll-bar-background: #000000;
+                            -fx-scroll-bar-inner-background: #000000;
+                            -fx-scroll-bar-border-color: #ffff00;
+                            -fx-scroll-bar-thumb-color: #ffff00;
+                            -fx-scroll-bar-arrow-color: #ffff00;
+                            -fx-scroll-bar-track-color: #000000;
+                          " />
+                <VBox alignment="CENTER" prefHeight="200.0" prefWidth="150.0" spacing="15">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#onSearchByArgumentsClick" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-font-weight: bold; -fx-background-color: #8b008b; -fx-text-fill: #ffff00; -fx-font-size: 14; -fx-border-color: #ffff00; -fx-border-width: 1; -fx-border-radius: 20;" text="Find by arg" />
+                        <Button mnemonicParsing="false" onAction="#onSaveToJsonClick" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-font-weight: bold; -fx-background-color: #8b008b; -fx-text-fill: #ffff00; -fx-font-size: 14; -fx-border-color: #ffff00; -fx-border-width: 1; -fx-border-radius: 20;" text="Save books" />
+                        <Button mnemonicParsing="false" onAction="#onLoadFromJsonClick" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-font-weight: bold; -fx-background-color: #8b008b; -fx-text-fill: #ffff00; -fx-font-size: 14; -fx-border-color: #ffff00; -fx-border-width: 1; -fx-border-radius: 20;" text="Upload books" />
+                        <Button mnemonicParsing="false" onAction="#onExitClick" prefHeight="40.0" prefWidth="140.0" style="-fx-background-radius: 20; -fx-font-weight: bold; -fx-background-color: #8b008b; -fx-text-fill: #ffff00; -fx-font-size: 14; -fx-border-color: #ffff00; -fx-border-width: 1; -fx-border-radius: 20;" text="Exit" />
+                    </children>
+                    <padding>
+                        <Insets left="15.0" />
+                    </padding>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

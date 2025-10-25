@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="ru.lebedeva.librarylabgui.SearchController"
+            prefHeight="400.0" prefWidth="600.0"
+            style="-fx-background-color: #000000;">
+
+    <VBox alignment="CENTER" spacing="20.0"
+          AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+          style="-fx-background-color: #000000;">
+        <children>
+            <Label text="Search Books by Arguments"
+                   style="-fx-text-fill: #ffff00; -fx-font-weight: bold; -fx-font-size: 16;"/>
+
+            <Label text="(Leave fields empty to ignore them)"
+                   style="-fx-text-fill: #ffff00; -fx-font-weight: bold; -fx-font-size: 12;"/>
+
+            <VBox spacing="5.0">
+                <Label text="Title:"
+                       style="-fx-text-fill: #ffff00; -fx-font-weight: bold;"/>
+                <TextField fx:id="titleField"
+                           style="-fx-background-color: #000000; -fx-text-fill: #ffff00; -fx-border-color: #ffff00; -fx-font-weight: bold; -fx-prompt-text-fill: #888888;"/>
+            </VBox>
+
+            <VBox spacing="5.0">
+                <Label text="Author:"
+                       style="-fx-text-fill: #ffff00; -fx-font-weight: bold;"/>
+                <TextField fx:id="authorField"
+                           style="-fx-background-color: #000000; -fx-text-fill: #ffff00; -fx-border-color: #ffff00; -fx-font-weight: bold; -fx-prompt-text-fill: #888888;"/>
+            </VBox>
+
+            <VBox spacing="5.0">
+                <Label text="Genre:"
+                       style="-fx-text-fill: #ffff00; -fx-font-weight: bold;"/>
+                <TextField fx:id="genreField"
+                           style="-fx-background-color: #000000; -fx-text-fill: #ffff00; -fx-border-color: #ffff00; -fx-font-weight: bold; -fx-prompt-text-fill: #888888;"/>
+            </VBox>
+
+            <VBox spacing="5.0">
+                <Label text="Year:"
+                       style="-fx-text-fill: #ffff00; -fx-font-weight: bold;"/>
+                <TextField fx:id="yearField"
+                           style="-fx-background-color: #000000; -fx-text-fill: #ffff00; -fx-border-color: #ffff00; -fx-font-weight: bold; -fx-prompt-text-fill: #888888;"/>
+            </VBox>
+
+            <Button onAction="#onSearchClick" text="Search"
+                    style="-fx-background-radius: 15; -fx-font-weight: bold; -fx-background-color: #8b008b; -fx-text-fill: #ffff00; -fx-font-size: 14; -fx-border-color: #ffff00; -fx-border-width: 1; -fx-border-radius: 15; -fx-pref-width: 180; -fx-pref-height: 35;"/>
+        </children>
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        </padding>
+    </VBox>
+</AnchorPane>

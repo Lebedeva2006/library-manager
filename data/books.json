@@ -1,0 +1,31 @@
+[ {
+  "title" : "The Hunger Games",
+  "author" : "Suzanne Collins",
+  "genre" : "Dystopia",
+  "year" : "2008"
+}, {
+  "title" : "Catching Fire",
+  "author" : "Suzanne Collins",
+  "genre" : "Dystopia",
+  "year" : "2009"
+}, {
+  "title" : "Mockingjay",
+  "author" : "Suzanne Collins",
+  "genre" : "Dystopia",
+  "year" : "2010"
+}, {
+  "title" : "The Ballad of Songbirds and Snakes",
+  "author" : "Suzanne Collins",
+  "genre" : "Dystopia",
+  "year" : "2020"
+}, {
+  "title" : "Sunrise on the Reaping",
+  "author" : "Suzanne Collins",
+  "genre" : "Dystopia",
+  "year" : "2025"
+}, {
+  "title" : "1984",
+  "author" : "George Orwell",
+  "genre" : "Dystopia",
+  "year" : "1949"
+} ]
